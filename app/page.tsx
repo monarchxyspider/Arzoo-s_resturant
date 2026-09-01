@@ -1,7 +1,11 @@
 /**
- * Home Page (route: /) – Single-page layout composing all sections.
- * No API calls; all content is static. MapDynamic loads the map only on the client (Leaflet needs window).
+ * Arzoo Restaurant Home Page (route: /)
+ *
+ * Single-page layout composing all restaurant sections.
+ * Content is managed inside the individual components.
+ * MapDynamic loads the Lahore location map on the client.
  */
+
 import About from "@/components/About";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
