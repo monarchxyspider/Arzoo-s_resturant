@@ -1,4 +1,4 @@
-# W'Foood | Restaurant Landing Page 1 - Next.js, TypeScript, TailwindCSS, Framer Motion Frontend Project
+# Arzoo Resturant
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/)
@@ -9,7 +9,6 @@
 
 A modern, responsive restaurant website built with Next.js 15, TypeScript, TailwindCSS, and Framer Motion. This project showcases local flavours and cuisine with smooth animations, an interactive map, and a clean UI. It is designed for both production use and as an educational resource for learning the App Router, client components, and modern React patterns. All content is static and client-friendly—no backend or API is required to run it.
 
-- **Live Demo:** [https://restaurant-wfood.vercel.app/](https://restaurant-wfood.vercel.app/)
 
 ![project23](https://github.com/user-attachments/assets/77de8404-aeba-4f67-b5fe-0438e80bda73) ![Screenshot 2024-09-13 at 03 34 24](https://github.com/user-attachments/assets/1ef89f8a-e6f8-4bfa-9c95-453e35bbf4ee) ![Screenshot 2024-09-13 at 03 35 51](https://github.com/user-attachments/assets/9f3eb9e5-5dd7-46fd-9b23-aee505fa84d1) ![Screenshot 2024-09-13 at 03 34 55](https://github.com/user-attachments/assets/bd1df324-3ba9-45d9-a530-5ebce27cfe36) ![Screenshot 2024-09-13 at 03 35 12](https://github.com/user-attachments/assets/d6f0347c-3ec7-41d1-9d64-695ee0ddfd24) ![Screenshot 2024-09-13 at 03 35 33](https://github.com/user-attachments/assets/7bff98ba-b797-4c01-962e-ec0e2156bbd6)
 
