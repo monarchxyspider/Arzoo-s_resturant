@@ -6,14 +6,14 @@ import type { Metadata } from "next";
 import { Lora, Poppins } from "next/font/google";
 import "./globals.css";
 
-/** Google Fonts via next/font: Lora (serif) for headings. Subsets/weights reduce bundle size. */
+/** Google Fonts */
 const lora = Lora({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-lora",
 });
 
-/** Poppins (sans-serif) for body text. Variable exposes --font-poppins for Tailwind. */
+/** Poppins for body text */
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -21,55 +21,58 @@ const poppins = Poppins({
 });
 
 /**
- * SEO & social metadata. Used for <head> (title, description, og:, twitter:).
- * metadataBase: base URL for resolving relative image paths in Open Graph.
+ * SEO & social metadata for Arzoo Restaurant.
  */
 export const metadata: Metadata = {
-  metadataBase: new URL("https://restaurant-wfood.vercel.app"),
+  metadataBase: new URL("https://arzoo-restaurant.vercel.app"),
+
   title: {
-    default: "W'Food - A Taste of Local Flavours | Modern Restaurant Website",
-    template: "%s | W'Food Restaurant",
+    default: "Arzoo Restaurant - Authentic Pakistani Food in Lahore",
+    template: "%s | Arzoo Restaurant",
   },
+
   description:
-    "Experience authentic local flavours at W'Food restaurant. Discover our favorite menu featuring Stilton and pancetta penne, Chorizo and avocado spaghetti, and more. Book a table online and enjoy modern dining with us.",
+    "Welcome to Arzoo Restaurant in Lahore, Pakistan. Enjoy authentic Pakistani cuisine, traditional flavours, delicious dishes, and a warm dining experience.",
+
   keywords: [
-    "restaurant",
-    "local food",
-    "dining",
-    "W'Food",
-    "restaurant website",
-    "food menu",
-    "book table",
-    "restaurant reservation",
-    "local flavours",
-    "modern restaurant",
-    "fine dining",
-    "gourmet food",
+    "Arzoo Restaurant",
+    "Pakistani restaurant",
+    "Pakistani food",
+    "restaurant in Lahore",
+    "Lahore restaurant",
+    "Pakistani cuisine",
+    "desi food",
+    "traditional Pakistani food",
+    "halal food",
+    "biryani",
+    "nihari",
+    "karahi",
+    "seekh kebab",
+    "tikka",
     "restaurant menu",
-    "online reservation",
-    "restaurant booking",
-    "Next.js",
-    "React",
-    "TailwindCSS",
-    "Framer Motion",
+    "book table",
+    "food restaurant",
+    "Lahore dining",
   ],
+
   authors: [
     {
-      name: "Arnob Mahmud",
-      url: "https://www.arnobmahmud.com",
+      name: "Arzoo Shahzad",
     },
   ],
+
   other: {
-    "application-name": "W'Food Restaurant",
-    "apple-mobile-web-app-title": "W'Food",
+    "application-name": "Arzoo Restaurant",
+    "apple-mobile-web-app-title": "Arzoo Restaurant",
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "default",
     "mobile-web-app-capable": "yes",
     "theme-color": "#e5e5e5",
-    "contact": "contact@arnobmahmud.com",
   },
-  creator: "Arnob Mahmud",
-  publisher: "Arnob Mahmud",
+
+  creator: "Arzoo Shahzad",
+  publisher: "Arzoo Shahzad",
+
   robots: {
     index: true,
     follow: true,
@@ -81,52 +84,63 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://restaurant-wfood.vercel.app",
-    siteName: "W'Food Restaurant",
-    title: "W'Food - A Taste of Local Flavours | Modern Restaurant Website",
+    locale: "en_PK",
+    url: "https://arzoo-restaurant.vercel.app",
+    siteName: "Arzoo Restaurant",
+
+    title: "Arzoo Restaurant - Authentic Pakistani Food in Lahore",
+
     description:
-      "Experience authentic local flavours at W'Food restaurant. Discover our favorite menu and book a table online.",
+      "Experience authentic Pakistani food at Arzoo Restaurant in Lahore. Discover delicious traditional dishes, rich flavours, and a memorable dining experience.",
+
     images: [
       {
         url: "/hero/plate.png",
         width: 756,
         height: 682,
-        alt: "W'Food Restaurant - A Taste of Local Flavours",
+        alt: "Arzoo Restaurant - Authentic Pakistani Food",
       },
       {
         url: "/logo.svg",
         width: 90,
         height: 36,
-        alt: "W'Food Restaurant Logo",
+        alt: "Arzoo Restaurant Logo",
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "W'Food - A Taste of Local Flavours | Modern Restaurant Website",
+    title: "Arzoo Restaurant - Authentic Pakistani Food in Lahore",
     description:
-      "Experience authentic local flavours at W'Food restaurant. Discover our favorite menu and book a table online.",
+      "Enjoy authentic Pakistani cuisine, traditional flavours, and delicious food at Arzoo Restaurant in Lahore, Pakistan.",
     images: ["/hero/plate.png"],
-    creator: "@arnob_mahmud",
   },
+
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
   },
+
   category: "restaurant",
 };
 
-/** Root layout: html/body get font CSS vars and background so first paint avoids white flash. */
+/** Root layout */
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" style={{ backgroundColor: "#e5e5e5" }}>
-      <body className={`${lora.variable} ${poppins.variable}`} style={{ backgroundColor: "#e5e5e5" }}>{children}</body>
+      <body
+        className={`${lora.variable} ${poppins.variable}`}
+        style={{ backgroundColor: "#e5e5e5" }}
+      >
+        {children}
+      </body>
     </html>
   );
 }
